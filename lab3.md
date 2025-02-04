@@ -5,7 +5,7 @@ For the details of this lab please follow along with the description/instruction
 This document is only meant to make copying and pasting the SQL commands a bit easier. 
 
 ## Section 2 Setting up MySQL on your EC2 Instance
-Download the mysql server install file from the Internet onto your EX2 instance using `wget`:
+Download the mysql server install file from the Internet onto your EC2 instance using `wget`:
 ```
 sudo wget https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm
 ```
