@@ -107,4 +107,18 @@ WHERE GPA > 3.6;
 
 For the rest of the database queries, I'd suggest typing them in yourself to make sure you understand what each query is asking for. 
 
+## Section 9: What to do if you need to re-connect
+
+Start by connecting to your EC2 instance via AWS. Then launch the `mysql` program:
+```
+mysql -u root -p
+```
+
+Then at the mysql prompt, i ssue the MySQL statement to use the CollegeApplications database:
+```
+mysql> use CollegeApplications;
+```
+
+Now you can continue querying your database.
+
 
