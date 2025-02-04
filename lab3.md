@@ -66,7 +66,7 @@ mysql -u root -p < CollegeSchema.sql
 
 It will prompt your for your password (the mysql password you entered earlier)
 
-Next, we can enter MySQL with the following command. tHis means "run the mysql program as the root user, and I want to enter the password".
+Next, we can enter MySQL with the following command. This means "run the mysql program as the root user, and I want to enter the password".
 
 ```
 mysql -u root -p
@@ -76,4 +76,33 @@ Now you should see a prompt from mysql that looks like `mysql>`.
 Now we'll tell MySQL to use the College Applications Schema that you just inserted:
 
 Enter the following after the `mysql>` prompt:
-``` use CollegeApplications;```
+``` 
+use CollegeApplications;
+```
+
+Now try:
+
+```
+show tables;
+```
+See Lab 3 for a description of these tables. 
+
+## Section 4: Your First SQL Query, `select all`
+
+Type in your first SQL query:
+```
+select * from College;
+```
+This will select all (`*`) rows from the `College` table. 
+
+## Section 5: Selecting specific columns, filtering with WHERE
+
+Type the following into the terminal:
+
+```
+SELECT sID, sName, GPA
+FROM Student
+WHERE GPA > 3.6;
+```
+
+
