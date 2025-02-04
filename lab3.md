@@ -105,4 +105,6 @@ FROM Student
 WHERE GPA > 3.6;
 ```
 
+For the rest of the database queries, I'd suggest typing them in yourself to make sure you understand what each query is asking for. 
+
 
